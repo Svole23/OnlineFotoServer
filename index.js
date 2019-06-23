@@ -11,13 +11,13 @@ var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
         user: 'aleksa.svorcan@gmail.com',
-        pass: 'stakurac123'
+        pass: ''
     }
 });
 
 app.post('/', (req, res) => {
   const mailOptions = {
-  from: 'aleksa.svorcan@gmail.com', // sender address
+  from: '', // sender address
   to: 'aleksa.svorcan@gmail.com', // list of receivers
   subject: 'Porudzbina', // Subject line
   html:'<p>Imate novu porudzbinu pod imenom:</p>' 
